@@ -17,7 +17,7 @@ switch ($url['path']) {
         break;
 
         // Case: Handle other paths
-    case '/pokemon':
+    case '/index.php/pokemon':
         // Check if the HTTP method is GET
         if ($method == 'GET') {
             // Parse the query string of the URL and store the result in the 'result' array
