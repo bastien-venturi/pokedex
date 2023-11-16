@@ -8,6 +8,7 @@ require_once __DIR__ . '/partials/header.php';
     <p>Hello <strong><?php echo $user['name'] ?></p></strong>
     <a href="index.php/pokemon?name=Pikachu">Pikachu</a>
     <a href="index.php/login">Login</a>
+    <a href="index.php/User">User</a>
 </main>
 
 <?php
