@@ -23,3 +23,4 @@ INSERT INTO type (name) VALUES
 INSERT INTO users (name, birthday, email, password) VALUES
 ('Ma Challah', '1990-05-05', 'amedouxlila@example.com', 'piqueAtchoum'),
 ('Lara Clette', '1992-07-15', 'vivelefromage@example.com', 'trempette123');
+
