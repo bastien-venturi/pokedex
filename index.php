@@ -37,6 +37,22 @@ switch($url['path'])
         }
         break;
 
+        
+    case '/userform':
+        // Check if the HTTP method is GET
+        if($method == 'GET') {
+            // Include the 'views/index.php' file for the root path
+            require 'controllers/UserController.php';
+            index();
+        }
+        else {
+            // If 'pokemon' parameter is not set, include the 'views/errors/404.php' file
+            require 'views/errors/404.php';
+            // Set HTTP response code to 404 Not Found
+            http_response_code(404);
+        }
+        break;
+
     // Default case: Handle all other paths
     default:
         // Include the 'views/errors/404.php' file for unknown paths
