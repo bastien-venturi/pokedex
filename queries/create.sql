@@ -47,8 +47,7 @@ CREATE TABLE evolutions (
 );
 
 CREATE TABLE stats (
-    id INT AUTO_INCREMENT PRIMARY KEY, 
-    pokemon_id INT, 
+    id INT AUTO_INCREMENT PRIMARY KEY,
     hp INT, 
     attack INT, 
     defense INT, 
