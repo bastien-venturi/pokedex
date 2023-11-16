@@ -1,29 +1,29 @@
 <?php
-// Simple Router
+// Routeur simple
 
-// Include the helper file for handling requests
+// Inclut le fichier d'aide pour gérer les requêtes
 require_once __DIR__.'/helpers/request.php';
 
-// Switch statement to handle different routes based on the path from the URL
+// Instruction Switch pour gérer différentes routes en fonction du chemin depuis l'URL
 switch($url['path'])
 {
     // Case: Root path '/'
-    case '/':
-        // Check if the HTTP method is GET
+    case '/Pokedex/':
+        // Vérifiez si la méthode HTTP est GET
         if($method == 'GET') {
-            // Include the 'views/index.php' file for the root path
+            // Inclut le fichier 'views/index.php' pour le chemin racine
             require 'controllers/PokedexController.php';
             index();
         }
         break;
 
-    // Case: Handle other paths
+    // Case: Gérer d'autres chemins
     case '/pokemon':
-        // Check if the HTTP method is GET
+        // Vérifiez si la méthode HTTP est GET
         if($method == 'GET') {
-            // Parse the query string of the URL and store the result in the 'result' array
+            // Analyse la chaîne de requête de l'URL et stocke le résultat dans le tableau 'result'
             parse_str($url['query'], $result);
-            // Check if the 'pokemon' parameter is set in the query string
+            // Vérifiez si le paramètre 'pokemon' est défini dans la chaîne de requête
             if(isset($result['name']) && !empty($result['name'])) {
                 
                 // If 'pokemon' parameter is set, include the 'views/show.php' file
