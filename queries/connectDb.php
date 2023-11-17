@@ -27,4 +27,3 @@ function connectDb()
     }
 }
 
-connectDb();
