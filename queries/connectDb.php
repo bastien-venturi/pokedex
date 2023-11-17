@@ -26,6 +26,3 @@ function connectDb() {
         echo "Error : " . $e->getMessage();
     }
 }
-
-
-connectDb();
