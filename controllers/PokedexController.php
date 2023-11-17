@@ -1,5 +1,8 @@
 <?php
 
+require './queries/connectDb.php';
+
+
 function index()
 {
     $user = [
@@ -7,12 +10,7 @@ function index()
         'email' => 'johndoe@email.com',
     ];
 
-    try {
-        $pdo = new PDO('mysql:host=localhost;dbname=pokedex', 'root', 'root');
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (Exception $e) {
-        die('Erreur CONNECT :' . $e->getMessage());
-    }
+    $pdo = connectDb();
 
     try {
         $query = $pdo->query('SELECT * from pokemons');
