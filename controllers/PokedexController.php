@@ -5,10 +5,10 @@ require './queries/connectDb.php';
 
 function index()
 {
-    $user = [
-        'name' => 'John Doe',
-        'email' => 'johndoe@email.com',
-    ];
+    if($_SESSION['user']){
+        $name = $_SESSION['user']['name'];
+    }
+
 
     $pdo = connectDb();
 
