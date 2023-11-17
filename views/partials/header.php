@@ -11,7 +11,7 @@
 <body>
     <header>
         <div>
-            <img src="public/img/pokemon-logo.png" alt="logoPokemon">
+            <img src="/public/img/pokemon-logo.png" alt="logoPokemon">
         </div>
 
         <div class="navbar">
