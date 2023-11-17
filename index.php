@@ -3,7 +3,6 @@
 
 // Include the helper file for handling requests
 require_once __DIR__ . '/helpers/request.php';
-require_once  __DIR__ . '/queries/connectDb.php';
 
 // Switch statement to handle different routes based on the path from the URL
 switch ($url['path']) {
@@ -43,9 +42,7 @@ switch ($url['path']) {
             // Include the 'views/index.php' file for the root path
             require 'controllers/loginController.php';
             index();
-            if(isset($_POST['name']) && isset($_POST['password'])){
-                logOn();
-            }
+
         }else {
             // If 'pokemon' parameter is not set, include the 'views/errors/404.php' file
             require 'views/errors/404.php';

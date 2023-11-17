@@ -7,7 +7,3 @@ function index()
 
 }
 
-function logOn(){
-    
-        header("Location: /index.php");
-}

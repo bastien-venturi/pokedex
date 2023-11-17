@@ -4,10 +4,21 @@
 
 function connectDb() {
 
-    require '../helpers/connect_var_db.php';
+
+// Chemin vers le fichier .env
+    $envFile = __DIR__ . '/../.idea/.env';
+
+// Charger les variables d'environnement depuis le fichier .env
+    $envVariables = parse_ini_file($envFile);
+
+// Récupérer les valeurs
+    $dbServer = $envVariables['DB_SERVER'];
+    $dbUsername = $envVariables['DB_USERNAME'];
+    $dbPassword = $envVariables['DB_PASSWORD'];
+
 
     try{
-        $conn = new PDO("mysql:host=$serverName;dbname=pokedex", $userName, $password);
+        $conn = new PDO("mysql:host=$dbServer;dbname=pokedex", $dbUsername, $dbPassword);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     }
@@ -15,3 +26,6 @@ function connectDb() {
         echo "Error : " . $e->getMessage();
     }
 }
+
+
+connectDb();
