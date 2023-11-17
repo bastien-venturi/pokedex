@@ -52,6 +52,15 @@ switch ($url['path']) {
         }
         break;
 
+        case '/index.php/User':
+            // Check if the HTTP method is GET
+            if ($method == 'GET') {
+                // Include the 'controllers/UserController.php' file for the root path
+                require 'controllers/UserController.php';
+                index();
+            }
+        break;
+
         // Default case: Handle all other paths
     default:
         // Include the 'views/errors/404.php' file for unknown paths
