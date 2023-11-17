@@ -1,20 +1,25 @@
 <?php 
-$title = $_GET['name'];
-require_once __DIR__.'/partials/header.php';
+    require_once __DIR__.'/partials/header.php';
 ?>
 
 <main>
 
-    <h1> Formulaire </h1>
+    <h1> Subscribe </h1>
 
-    <form action="" method="post">
-        <input type="text" name=name>
-        <input type="text" name=lastname>
-        <input type='email' name=email>
-        <input type="submit" name=submituser value="Envoyer">
+    <form action="../controllers/UserCreateController.php" method="post">
+        <input type="text" name=name placeholder=Name>              
+        <input type="date" name=birthday placeholder=Birthday>
+        <input type='email' name=email placeholder=Email>
+        <input type="password" name=password placeholder=Password>
+        <input type="submit" name=submit value="Submit">
     </form>
+    <a href="/">Homepage</a>
+
+
 
 </main>
+
+
 
 <?php 
 require_once __DIR__.'/partials/footer.php';

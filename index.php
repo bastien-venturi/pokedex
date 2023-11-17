@@ -33,6 +33,7 @@ switch ($url['path']) {
                 // Set HTTP response code to 404 Not Found
                 http_response_code(404);
             }
+        
         }
         break;
 
@@ -49,6 +50,15 @@ switch ($url['path']) {
             // Set HTTP response code to 404 Not Found
             http_response_code(404);
         }
+        break;
+
+        case '/index.php/User':
+            // Check if the HTTP method is GET
+            if ($method == 'GET') {
+                // Include the 'controllers/UserController.php' file for the root path
+                require 'controllers/UserController.php';
+                index();
+            }
         break;
 
         // Default case: Handle all other paths
