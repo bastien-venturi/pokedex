@@ -1,9 +1,8 @@
 <?php
 $title = $_GET['name'];
 require_once __DIR__ . '/partials/header.php';
+require './controllers/showController.php';
 ?>
-
-
 ?>
 
 <main>
