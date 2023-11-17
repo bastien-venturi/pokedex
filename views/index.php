@@ -16,8 +16,9 @@ require_once __DIR__ . '/partials/header.php';
     <?php
 
     foreach ($data as $row) {
+        echo '<a href="index.php/pokemon?name=' . $row['name'] . '">';
         echo '<div class="card">';
-        if($_SESSION['user']){
+        if (isset($_SESSION['user'])) {
             echo '<form action="../controllers/addFav.php" method="post">';
             echo '<input type="hidden" name="pokeId" value="' . $row['id'] . '">';
             echo '<input type="submit" value="+">';
@@ -32,6 +33,7 @@ require_once __DIR__ . '/partials/header.php';
         echo '<li class="' . $row['secondary_type_name'] . '">' . $row['secondary_type_name'] . '</li>';
         echo '</ul>';
         echo '</div>';
+        echo '</a>';
     }
     ?>
 </div>

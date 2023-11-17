@@ -3,6 +3,9 @@ $title = $_GET['name'];
 require_once __DIR__ . '/partials/header.php';
 require './controllers/showController.php';
 $pokemonDetails = fetchDetails();
+echo '<pre>';
+print_r($pokemonDetails);
+echo '</pre>';
 ?>
 
 <main>
