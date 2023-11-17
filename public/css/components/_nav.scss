@@ -1,0 +1,35 @@
+form {
+    justify-content: center;
+    
+
+    .navbar-search {
+        margin-top: 200px;
+    }
+    .btn-search {
+        color: #f8c146;
+        border: 1px solid #f8c146;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    .btn-search:hover {
+        color: #f8c146;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        
+    }
+
+    .input-search {
+        border: 1px solid #f8c146;
+        border-radius: 20px;
+        font-family: 'Exo 2';
+    }
+
+    .input-search:focus {
+        box-shadow: 0px 0px 0px;
+        border-color: #f8c146;
+        outline: 0px;
+    }
+}
+
+
+
