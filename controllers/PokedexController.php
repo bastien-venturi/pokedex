@@ -11,7 +11,6 @@ function index()
     ];
 
     $pdo = connectDb();
-
     try {
         $query = $pdo->query('SELECT * from pokemons');
         $data = $query->fetchAll(PDO::FETCH_ASSOC);
