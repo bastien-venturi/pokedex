@@ -1,3 +1,255 @@
-body{
-    background-color: #f1f1f1;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0.5em 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.1s ease-in-out;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(215, 215, 215) 0px 0px 0px 2px;
+}
+.card img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+.card h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.card .type {
+  opacity: 0.7;
+  font-size: 0.6em;
+}
+.card ul {
+  padding: 0.5em 0;
+  display: flex;
+  gap: 0.3em;
+  font-size: 0.8em;
+  justify-content: center;
+}
+.card ul li {
+  padding: 0.4em;
+  border-radius: 4px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.Normal {
+  background-color: #a8a77a;
+}
+
+.Fire {
+  background-color: #ee8130;
+}
+
+.Water {
+  background-color: #6390f0;
+}
+
+.Electric {
+  background-color: #f7d02c;
+}
+
+.Grass {
+  background-color: #7ac74c;
+}
+
+.Ice {
+  background-color: #96d9d6;
+}
+
+.Fighting {
+  background-color: #c22e28;
+}
+
+.Poison {
+  background-color: #a33ea1;
+}
+
+.Ground {
+  background-color: #e2bf65;
+}
+
+.Flying {
+  background-color: #a98ff3;
+}
+
+.Psychic {
+  background-color: #f95587;
+}
+
+.Bug {
+  background-color: #a6b91a;
+}
+
+.Rock {
+  background-color: #b6a136;
+}
+
+.Ghost {
+  background-color: #735797;
+}
+
+.Dragon {
+  background-color: #6f35fc;
+}
+
+.Dark {
+  background-color: #705746;
+}
+
+.Steel {
+  background-color: #b7b7ce;
+}
+
+.Fairy {
+  background-color: #d685ad;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+  width: 100%;
+  background-color: #f3f4f6;
+  flex-wrap: wrap;
+  padding: 1em 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}/*# sourceMappingURL=styles.css.map */
