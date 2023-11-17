@@ -10,6 +10,24 @@ require_once __DIR__ . '/partials/header.php';
     <a href="index.php/login">Login</a>
 </main>
 
+<div class="container">
+    <?php
+    foreach ($data as $row) {
+        echo '<a href="#">';
+        echo '<div class="card">';
+        echo '<figure><img src="' . $row['url_img'] . '" alt="pokemon_img">';
+        echo '</figure>';
+        echo '<span>#0000' . $row['id'] . '</span>';
+        echo '<h3>' . $row['name'] . '</h3>';
+        echo '<ul>';
+        echo '<li>' . $row['type_primary'] . '</li>';
+        echo '<li>' . $row['type_secondary'] . '</li>';
+        echo '</ul>';
+        echo '<a>';
+    }
+    ?>
+</div>
+
 <?php
 require_once __DIR__ . '/partials/footer.php';
 ?>
