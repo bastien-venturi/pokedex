@@ -4,7 +4,7 @@ require_once __DIR__.'/partials/header.php';
 ?>
 
     <main>
-        <form action="/../queries/connectDb.php" method="post">
+        <form action="/../authentification/auth.php" method="post">
             <label for="name">Name:</label>
             <input type="text" name="name" placeholder="Name">
             <label for="password">Password:</label>
