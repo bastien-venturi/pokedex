@@ -1,0 +1,24 @@
+footer {
+    padding: 0 15px;
+    .btn-color-blue {
+        border-bottom: solid 3px #0075BE !important;
+    }
+    .btn-color-blue:hover {
+        background-color: #0075BE;
+        color:#fff !important;
+    }
+    .btn-color-yellow {
+        border-bottom: solid 3px #FFCC00 !important;
+    }
+    .btn-color-yellow:hover {
+        background-color: #FFCC00;
+        color:#fff !important;
+    } 
+    .btn-color-red {
+        border-bottom: solid 3px #CC0000 !important;
+    }
+    .btn-color-red:hover {
+        background-color: #CC0000;
+        color:#fff !important;
+    }
+}
