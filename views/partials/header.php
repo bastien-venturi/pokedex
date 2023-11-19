@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <div>
+        <div class="header-pic">
             <img src="public/img/pokemon-logo.png" alt="logoPokemon">
         </div>
         
