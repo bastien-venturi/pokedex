@@ -22,4 +22,3 @@ if(isset($_SESSION['user']) && $_SERVER["REQUEST_METHOD"] == "POST"){
         echo "ERROR : $e";
     }
 }
-?>

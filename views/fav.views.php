@@ -16,9 +16,8 @@ require_once __DIR__ . '/partials/header.php';
             <tr>
                 <th></th>
                 <th>Pokemon</th>
-                <th>name</th>
                 <th>Stats</th>
-                <th>delete</th>
+                <th>Delete</th>
             </tr>
                
             
