@@ -4,8 +4,9 @@ require_once __DIR__ . '/partials/header.php';
 ?>
 
 <main>
-    <h1 class="greetings">Hello <strong><?php echo $name ?></h1></strong>
-
+<?php if(isset($_SESSION['user'])): ?>
+    <h1 class="greetings">Hello <?php echo $name?></h1>
+    <?php endif;?>
 
 
     <div class="index_container">

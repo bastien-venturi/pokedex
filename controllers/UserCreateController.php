@@ -1,25 +1,31 @@
-<?php
+<!-- <?php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once __DIR__.'/../queries/connectDb.php';
         $bdd = connectDb();
         
-        if (isset($_POST['name']) && isset($_POST['birthday']) && isset($_POST['email']) && isset($_POST['password'])) {
 
-            if (empty($name)) {
-                $nameErr =  'Name is required';
-                //utiliser la fonction preg_match() avec une expression régulière pour vérifier que le nom ne contient que des lettres et des espaces.
-                //Si la validation échoue, afficher un message d'erreur
-            } elseif (!preg_match('/^[a-zA-Z ]+$/', $name)) {
-                $nameErr =  'Only letters and white space allowed';
-            }
-        
-            
-            $email = filter_var($_POST["email"], FILTER_VALIDATE_EMAIL);
-            if ($email === false) {
-                echo 'Please provide a valid e-mail address';
+    if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password2'])) {
 
-            }
+        //vérifier récupérer les données du form 
+        $username = $_POST['name'];
+        $password = $_POST['password'];
+        $confirmpassword =  $_POST['password2'];
+        $passwordlen = strlen($password);
+        $min = 7;
+        //validation des champs du form
+        $usernameErr = empty($username) ? "* Email is required" : (!filter_var($_POST['username'], FILTER_VALIDATE_EMAIL) ? "Invalid email" : "");
+        $passwordErr =  empty($password) ? " Password is required" : ($passwordlen < $min ? "Password should have min 7 characters" : "");
+        $passwordConfirmErr = empty($confirmpassword) ? " Password is required" : ($password != $confirmpassword ? "*password doesn't match" : "");
+
+        //si erreurs de validation, retounrer un tableau d'erreurs 
+        return array(
+            "username" => $usernameErr,
+            "password" => $passwordErr,
+            "password2" => $passwordConfirmErr
+
+        );
+    }
 
             }
              else {
@@ -42,4 +48,4 @@
 else {
     header('Location: /');
 }
-?>
+?> -->
