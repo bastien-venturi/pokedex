@@ -55,7 +55,7 @@
   }
 }
 
-.type {
+.type_id {
   font-size: 4.5em;
   color: $darkgrey;
   font-weight: 600;
@@ -72,6 +72,7 @@
   flex-direction: column;
   .label {
     opacity: 0.6;
+    margin: 0;
   }
   .results {
     font-size: 1.8em;

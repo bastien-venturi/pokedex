@@ -439,7 +439,7 @@ header {
   z-index: 2;
 }
 
-.type {
+.type_id {
   font-size: 4.5em;
   color: #dadbdc;
   font-weight: 600;
@@ -457,6 +457,7 @@ header {
 }
 .pokemon_stats .label {
   opacity: 0.6;
+  margin: 0;
 }
 .pokemon_stats .results {
   font-size: 1.8em;

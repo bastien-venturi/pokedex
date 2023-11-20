@@ -39,7 +39,7 @@ echo '</pre>'; */
                 </ul>
             </div>
             <div class="pokemon_row">
-                <span class="type">#0000<?= $pokemonDetails['id'];  ?></span>
+                <span class="type_id">#0000<?= $pokemonDetails['id'];  ?></span>
                 <figure>
                     <img src="<?= $pokemonDetails['url_img']; ?>" alt="<?= $pokemonDetails['name']; ?> image">
                 </figure>
