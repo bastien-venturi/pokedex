@@ -530,4 +530,15 @@ header {
     width: 320px;
     height: auto;
   }
+}
+table {
+  border: 1px solid red;
+  width: 100%;
+}
+table .fav_pkmn {
+  width: 200px;
+}
+
+.view_title {
+  margin: 1em 1em;
 }/*# sourceMappingURL=styles.css.map */
