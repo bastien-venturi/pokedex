@@ -26,10 +26,10 @@
             <nav class="navbar">
                 <ul class="navbar-list">
                     <li><a href="/" class="btn-color-blue">Pokemon</a></li>
-                    <li><a href="#" class="btn-color-yellow">My account</a></li>
+                    <li><a href="/index.php/account" class="btn-color-yellow">My account</a></li>
                     <li><a href="/index.php/User" class="btn-color-red">Register</a></li>
                     <?php if (isset($_SESSION['user'])) : ?>
-                        <li><a href="#">Offline</a></li>
+                        <li><a href="/index.php/logOff">Offline</a></li>
                     <?php else : ?>
                         <li><a href="/index.php/login">Login</a></li>
                     <?php endif; ?>
