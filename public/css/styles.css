@@ -531,14 +531,15 @@ header {
     height: auto;
   }
 }
-table {
-  border: 1px solid red;
-  width: 100%;
-}
-table .fav_pkmn {
-  width: 200px;
-}
-
 .view_title {
   margin: 1em 1em;
+}
+
+.fav_container {
+  display: flex;
+  margin: 0 1em;
+  gap: 1em;
+}
+.fav_container a {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

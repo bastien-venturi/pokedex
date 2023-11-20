@@ -12,30 +12,23 @@ require_once __DIR__ . '/partials/header.php';
 
 <main>
     <h2 class="view_title">Mes favoris</h2>
-    <table>
+    <div class="fav_container">
         <?php foreach ($data as $row) : ?>
-            <tr>
-                <td><img src="<?php echo $row['url_img'] ?>" alt="pokemon_img" class="fav_pkmn"></td>
-                <td><?php echo $row['name'] ?></td>
-                <td>
-                    <ul>
-                        <li>hp : <?php echo $row['hp'] ?></li>
-                        <li>attack : <?php echo $row['attack'] ?></li>
-                        <li>defense : <?php echo $row['defense'] ?></li>
-                        <li>specific_defense : <?php echo $row['specific_defense'] ?></li>
-                        <li>specific_attack : <?php echo $row['specific_attack'] ?></li>
-                        <li>speed : <?php echo $row['speed'] ?></li>
-                    </ul>
-                </td>
-                <td>
-                    <form action="../controllers/delFav.php" method="post">
-                        <input type="hidden" name="pokeId" value="<?php echo $row['pokemon_id'] ?>">
-                        <input type="submit" value="delete">
-                    </form>
-                </td>
-            </tr>
+            <a href="pokemon?name=<?= $row['name'] ?>">
+                <div class="card">
+                    <figure><img src="<?= $row['url_img'] ?>" alt="pokemon_img"></figure>
+                    <span class="type">#0000<?= $row['pokemon_id'] ?></span>
+                    <h3><?= $row['name'] ?></h3>
+                    <?php if (isset($_SESSION['user'])) : ?>
+                        <form action="../controllers/delFav.php" method="post">
+                            <input type="hidden" name="pokeId" value="<?php echo $row['pokemon_id'] ?>">
+                            <input type="submit" value="delete">
+                        </form>
+                    <?php endif; ?>
+                </div>
+            </a>
         <?php endforeach; ?>
-    </table>
+    </div>
 </main>
 
 <?php

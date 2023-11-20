@@ -1,11 +1,12 @@
-table {
-  border: 1px solid red;
-  width: 100%;
-  .fav_pkmn {
-    width: 200px;
-  }
-}
-
 .view_title {
   margin: 1em 1em;
+}
+
+.fav_container {
+  display: flex;
+  margin: 0 1em;
+  gap: 1em;
+  a {
+    text-decoration: none;
+  }
 }
