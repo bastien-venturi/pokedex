@@ -18,18 +18,22 @@ echo '</pre>'; */
                     <li class="<?= $pokemonDetails['secondary_type_name']; ?>"><?= $pokemonDetails['secondary_type_name']; ?></li>
                 </ul>
                 <div class="pokemon_stats">
-                    <p class="label">HP</p>
-                    <p class="results"><?= $pokemonDetails['hp'] ?></p>
-                    <p class="label">Attack</p>
-                    <p class="results"><?= $pokemonDetails['attack'] ?></p>
-                    <p class="label">Defense</p>
-                    <p class="results"><?= $pokemonDetails['defense'] ?></p>
-                    <p class="label">Specific defense</p>
-                    <p class="results"><?= $pokemonDetails['specific_defense'] ?></p>
-                    <p class="label">Specific attack</p>
-                    <p class="results"><?= $pokemonDetails['specific_attack'] ?></p>
-                    <p class="label">Speed</p>
-                    <p class="results"><?= $pokemonDetails['speed'] ?></p>
+                    <div>
+                        <p class="label">HP</p>
+                        <p class="results"><?= $pokemonDetails['hp'] ?></p>
+                        <p class="label">Attack</p>
+                        <p class="results"><?= $pokemonDetails['attack'] ?></p>
+                        <p class="label">Defense</p>
+                        <p class="results"><?= $pokemonDetails['defense'] ?></p>
+                    </div>
+                    <div>
+                        <p class="label">SPD</p>
+                        <p class="results"><?= $pokemonDetails['specific_defense'] ?></p>
+                        <p class="label">SPA</p>
+                        <p class="results"><?= $pokemonDetails['specific_attack'] ?></p>
+                        <p class="label">Speed</p>
+                        <p class="results"><?= $pokemonDetails['speed'] ?></p>
+                    </div>
                 </div>
                 <h2>Evolutions</h2>
                 <ul class="pokemon_evo">

@@ -382,6 +382,11 @@ header {
   color: black;
 }
 
+.greetings {
+  text-align: center;
+  color: #dadbdc;
+}
+
 .pokemon_container {
   display: flex;
   padding: 2em 0;
@@ -453,7 +458,10 @@ header {
 .pokemon_stats {
   margin: 2em 0;
   display: flex;
-  flex-direction: column;
+  gap: 3em;
+}
+.pokemon_stats div {
+  width: 50%;
 }
 .pokemon_stats .label {
   opacity: 0.6;
