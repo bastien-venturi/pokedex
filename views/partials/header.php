@@ -22,21 +22,6 @@
             </a>
         </div>
 
-<<<<<<< HEAD
-        <div class="navbar">
-            <ul class="navbar-list">
-                <li><a href="#">
-                        <h2>Pokemon</h2>
-                    </a></li>
-                <li><a href="index.php/account">
-                        <h2>My account</h2>
-                    </a></li>
-                <li><a href="#">
-                        <h2>Register</h2>
-                    </a></li>
-            </ul>
-        </div>
-=======
         <div class="nav_container">
             <nav class="navbar">
                 <ul class="navbar-list">
@@ -50,7 +35,6 @@
                     <?php endif; ?>
                 </ul>
             </nav>
->>>>>>> dev
 
             <div class="navbar-search">
                 <div class="form-container">
