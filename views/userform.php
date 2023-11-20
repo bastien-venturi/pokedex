@@ -11,6 +11,7 @@
         <input type="date" name=birthday placeholder=Birthday>
         <input type='email' name=email placeholder=Email>
         <input type="password" name=password placeholder=Password>
+        <input type="password" name=password2 placeholder=Confirm Password>
         <input type="submit" name=submit value="Submit">
     </form>
     <a href="/">Homepage</a>
