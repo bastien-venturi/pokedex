@@ -291,7 +291,7 @@ header {
   transition: all 0.1s ease-in-out;
 }
 .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(215, 215, 215) 0px 0px 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(215, 215, 215) 0px 0px 0px 1px;
 }
 .card form {
   width: 100%;
