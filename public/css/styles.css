@@ -244,7 +244,7 @@ table {
   background-color: #d685ad;
 }
 
-.container {
+.index_container {
   display: flex;
   justify-content: center;
   gap: 0.7em;
@@ -254,7 +254,108 @@ table {
   padding: 1em 0;
   font-family: "Poppins";
 }
-.container a {
+.index_container a {
   text-decoration: none;
   color: black;
+}
+
+.pokemon_container {
+  display: flex;
+  padding: 2em 0;
+  width: 100%;
+  font-family: "Poppins";
+}
+
+.pokemon_row {
+  width: 50%;
+  margin: 0 1em;
+}
+.pokemon_row h1 {
+  font-size: 3em;
+  font-weight: 600;
+}
+.pokemon_row h2 {
+  margin-top: 1em;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+.pokemon_row .pokemon_evo {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.pokemon_row .pokemon_evo img {
+  width: 110px;
+  padding: 1em;
+  height: auto;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+}
+.pokemon_row ul {
+  padding: 0.5em 0;
+  display: flex;
+  gap: 0.3em;
+  font-size: 0.8em;
+}
+.pokemon_row ul li {
+  padding: 0.4em;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.pokemon_row:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pokemon_row:nth-child(2) figure {
+  z-index: 2;
+}
+
+.type {
+  font-size: 4.5em;
+  color: #dadbdc;
+  font-weight: 600;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -80%);
+}
+
+.pokemon_stats {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+}
+.pokemon_stats .label {
+  opacity: 0.6;
+}
+.pokemon_stats .results {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+@media screen and (max-width: 768px) {
+  .pokemon_container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .pokemon_row {
+    margin: 0 0.3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pokemon_row figure img {
+    width: 320px;
+    height: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -12,7 +12,7 @@ require_once __DIR__ . '/partials/header.php';
 </main>
 
 
-<div class="container">
+<div class="index_container">
     <?php
 
     foreach ($data as $row) {
