@@ -33,9 +33,9 @@
                     <?php endif; ?>
                     <li><a href="/index.php/User" class="btn-color-red">Register</a></li>
                     <?php if (isset($_SESSION['user'])) : ?>
-                        <li><a href="/index.php/login"><i class="fa-solid fa-house-circle-xmark"></i></a></li>
+                        <li><a href="/index.php/logOff"><i class="fa-solid fa-house-circle-xmark"></i></a></li>
                     <?php else : ?>
-                        <li><a href="/index.php/logOff"><i class="fa-solid fa-house-circle-check"></i></a></li>
+                        <li><a href="/index.php/login"><i class="fa-solid fa-house-circle-check"></i></a></li>
                     <?php endif; ?>
                 </ul>
             </nav>
