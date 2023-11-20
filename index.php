@@ -8,7 +8,7 @@ session_start();
 
 // Switch statement to handle different routes based on the path from the URL
 switch ($url['path']) {
-        // Case: Root path '/'
+    // Case: Root path '/'
     case '/':
         // Check if the HTTP method is GET
         if ($method == 'GET') {
@@ -18,7 +18,7 @@ switch ($url['path']) {
         }
         break;
 
-        // Case: Handle other paths
+    // Case: Handle other paths
     case '/index.php/pokemon':
         // Check if the HTTP method is GET
         if ($method == 'GET') {
@@ -54,13 +54,13 @@ switch ($url['path']) {
         }
         break;
 
-        case '/index.php/User':
-            // Check if the HTTP method is GET
-            if ($method == 'GET') {
-                // Include the 'controllers/UserController.php' file for the root path
-                require 'controllers/UserController.php';
-                index();
-            }
+    case '/index.php/User':
+        // Check if the HTTP method is GET
+        if ($method == 'GET') {
+            // Include the 'controllers/UserController.php' file for the root path
+            require 'controllers/UserController.php';
+            index();
+        }
         break;
     case '/index.php/account':
         // Check if the HTTP method is GET
@@ -71,16 +71,24 @@ switch ($url['path']) {
         break;
 
     // Default case: Handle all other paths
-        
-        case '/index.php/login':
-            // Check if the HTTP method is GET
-            if ($method == 'GET') {
-                // Include the 'controllers/UserController.php' file for the root path
-                require 'controllers/loginController.php';
-                index();
-            }
+
+    case '/index.php/login':
+        // Check if the HTTP method is GET
+        if ($method == 'GET') {
+            // Include the 'controllers/UserController.php' file for the root path
+            require 'controllers/loginController.php';
+            index();
+        }
         break;
-        // Default case: Handle all other paths
+
+    case '/index.php/logOff':
+        // Check if the HTTP method is GET
+        if ($method == 'GET') {
+            // Include the 'controllers/UserController.php' file for the root path
+            require 'authentification/disconnect.php';
+        }
+        break;
+    // Default case: Handle all other paths
     default:
         // Include the 'views/errors/404.php' file for unknown paths
         require 'views/errors/404.php';
