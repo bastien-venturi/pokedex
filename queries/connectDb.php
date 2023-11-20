@@ -6,7 +6,7 @@ function connectDb()
 {
 
 
-    // Chemin vers le fichier .env
+    //Chemin vers le fichier .env
     $envFile = __DIR__ . '/../.idea/.env';
 
     // Charger les variables d'environnement depuis le fichier .env
@@ -16,7 +16,6 @@ function connectDb()
     $dbServer = $envVariables['DB_SERVER'];
     $dbUsername = $envVariables['DB_USERNAME'];
     $dbPassword = $envVariables['DB_PASSWORD'];
-
 
     try {
         $conn = new PDO("mysql:host=$dbServer;dbname=pokedex", $dbUsername, $dbPassword);

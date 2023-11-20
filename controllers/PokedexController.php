@@ -11,7 +11,6 @@ function index()
 
 
     $pdo = connectDb();
-
     try {
         $query = $pdo->query('SELECT 
         p.*, 

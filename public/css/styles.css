@@ -134,6 +134,129 @@ table {
   border-spacing: 0;
 }
 
+.navbar-search h2 {
+  font-family: "Exo 2", sans-serif;
+  text-align: center;
+  margin-top: 8px;
+}
+.navbar-search .form-container {
+  display: flex;
+  justify-content: center;
+}
+.navbar-search .form-container form {
+  justify-content: center;
+}
+.navbar-search .form-container form .btn-search {
+  font-size: 0.8rem;
+  color: #000;
+  background-color: #FFF;
+  border: 1px solid #CC0000;
+  border-radius: 20px;
+  padding: 5px;
+}
+.navbar-search .form-container form .btn-search:hover {
+  color: #FFF;
+  background-color: #CC0000;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+.navbar-search .form-container form .input-search {
+  border: 1px solid #CC0000;
+  border-radius: 20px;
+  font-family: "Exo 2";
+  padding-left: 8px;
+}
+.navbar-search .form-container form .input-search:focus {
+  box-shadow: 0px 0px 0px;
+  border-color: #CC0000;
+  outline: 0px;
+}
+
+footer {
+  padding: 0 15px;
+}
+footer .btn-color-blue {
+  border-bottom: solid 3px #0075BE !important;
+}
+footer .btn-color-blue:hover {
+  background-color: #0075BE;
+  color: #fff !important;
+}
+footer .btn-color-yellow {
+  border-bottom: solid 3px #FFCC00 !important;
+}
+footer .btn-color-yellow:hover {
+  background-color: #FFCC00;
+  color: #fff !important;
+}
+footer .btn-color-red {
+  border-bottom: solid 3px #CC0000 !important;
+}
+footer .btn-color-red:hover {
+  background-color: #CC0000;
+  color: #fff !important;
+}
+
+header {
+  background: #f3f4f6;
+  padding: 15px 0;
+}
+
+.header-logo {
+  text-align: center;
+}
+.header-logo img {
+  width: 60%;
+}
+
+.navbar {
+  justify-content: center;
+  font-family: "Exo 2", sans-serif;
+  background-color: #fff;
+  overflow: hidden;
+  height: 3.5em;
+  width: 100%;
+}
+.navbar .navbar-list {
+  display: inline-table;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0;
+}
+.navbar .navbar-list li {
+  display: table-cell;
+}
+.navbar .navbar-list a {
+  display: block;
+  padding: 0 1em;
+  text-decoration: none;
+  color: #333;
+  height: 3em;
+  line-height: 3;
+  margin-bottom: 20px;
+}
+.navbar .navbar-list .btn-color-blue {
+  border-bottom: solid 3px #0075BE;
+}
+.navbar .navbar-list .btn-color-blue:hover {
+  background-color: #0075BE;
+  color: #fff;
+}
+.navbar .navbar-list .btn-color-yellow {
+  border-bottom: solid 3px #FFCC00;
+}
+.navbar .navbar-list .btn-color-yellow:hover {
+  background-color: #FFCC00;
+  color: #fff;
+}
+.navbar .navbar-list .btn-color-red {
+  border-bottom: solid 3px #CC0000;
+}
+.navbar .navbar-list .btn-color-red:hover {
+  background-color: #CC0000;
+  color: #fff;
+}
+
 .card {
   background-color: white;
   border-radius: 8px;
