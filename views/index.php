@@ -8,8 +8,6 @@ require_once __DIR__ . '/partials/header.php';
         <h1 class="greetings">Hello <?php echo $name ?></h1>
     <?php endif; ?>
 
-
-
     <div class="index_container">
         <?php foreach ($data as $row) : ?>
             <a href="index.php/pokemon?name=<?= $row['name'] ?>">
