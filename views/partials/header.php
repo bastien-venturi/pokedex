@@ -22,27 +22,27 @@
             </a>
         </div>
 
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li><a href="/" class="btn-color-blue">Pokemon</a></li>
-                <li><a href="#" class="btn-color-yellow">My account</a></li>
-                <li><a href="/index.php/User" class="btn-color-red">Register</a></li>
-                <?php if (isset($_SESSION['user'])) : ?>
-                    <li><a href="#">Offline</a></li>
-                <?php else : ?>
-                    <li><a href="/index.php/login">Login</a></li>
-                <?php endif; ?>
-            </ul>
-        </nav>
+        <div class="nav_container">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li><a href="/" class="btn-color-blue">Pokemon</a></li>
+                    <li><a href="#" class="btn-color-yellow">My account</a></li>
+                    <li><a href="/index.php/User" class="btn-color-red">Register</a></li>
+                    <?php if (isset($_SESSION['user'])) : ?>
+                        <li><a href="#">Offline</a></li>
+                    <?php else : ?>
+                        <li><a href="/index.php/login">Login</a></li>
+                    <?php endif; ?>
+                </ul>
+            </nav>
 
-        <div class="navbar-search">
-            <h2>Find your Pokemon</h2>
-            <div class="form-container">
-                <form action="" autocomplete="on">
-                    <input class="input-search" name="search" type="text" placeholder="Search ..">
-                    <button class="btn-search" id="search_submit" value="Rechercher" type="submit"><i class="fa fa-search"></i></button>
-                </form>
+            <div class="navbar-search">
+                <div class="form-container">
+                    <form action="" autocomplete="on">
+                        <input class="input-search" name="search" type="text" placeholder="Search ..">
+                        <button class="btn-search" id="search_submit" value="Rechercher" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
-
     </header>

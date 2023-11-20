@@ -134,41 +134,45 @@ table {
   border-spacing: 0;
 }
 
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
 .navbar-search h2 {
   font-family: "Exo 2", sans-serif;
   text-align: center;
   margin-top: 8px;
 }
-.navbar-search .form-container {
+.navbar-search form {
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.navbar-search .form-container form {
-  justify-content: center;
-}
-.navbar-search .form-container form .btn-search {
+.navbar-search form .btn-search {
   font-size: 0.8rem;
   color: #000;
-  background-color: #FFF;
-  border: 1px solid #CC0000;
-  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #cc0000;
+  border-radius: 50%;
   padding: 5px;
 }
-.navbar-search .form-container form .btn-search:hover {
-  color: #FFF;
-  background-color: #CC0000;
+.navbar-search form .btn-search:hover {
+  color: #fff;
+  background-color: #cc0000;
   border: 1px solid #000;
   border-radius: 20px;
 }
-.navbar-search .form-container form .input-search {
-  border: 1px solid #CC0000;
+.navbar-search form .input-search {
+  border: 1px solid #cc0000;
   border-radius: 20px;
   font-family: "Exo 2";
   padding-left: 8px;
 }
-.navbar-search .form-container form .input-search:focus {
+.navbar-search form .input-search:focus {
   box-shadow: 0px 0px 0px;
-  border-color: #CC0000;
+  border-color: #cc0000;
   outline: 0px;
 }
 
@@ -197,9 +201,13 @@ footer .btn-color-red:hover {
   color: #fff !important;
 }
 
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+}
+
 header {
   background: #f3f4f6;
-  padding: 15px 0;
 }
 
 .header-logo {
@@ -219,7 +227,6 @@ header {
 }
 .navbar .navbar-list {
   display: inline-table;
-  margin: 0 auto;
   max-width: 100%;
   padding: 0;
 }
@@ -236,27 +243,43 @@ header {
   margin-bottom: 20px;
 }
 .navbar .navbar-list .btn-color-blue {
-  border-bottom: solid 3px #0075BE;
+  border-bottom: solid 3px #0075be;
 }
 .navbar .navbar-list .btn-color-blue:hover {
-  background-color: #0075BE;
+  background-color: #0075be;
   color: #fff;
 }
 .navbar .navbar-list .btn-color-yellow {
-  border-bottom: solid 3px #FFCC00;
+  border-bottom: solid 3px #ffcc00;
 }
 .navbar .navbar-list .btn-color-yellow:hover {
-  background-color: #FFCC00;
+  background-color: #ffcc00;
   color: #fff;
 }
 .navbar .navbar-list .btn-color-red {
-  border-bottom: solid 3px #CC0000;
+  border-bottom: solid 3px #cc0000;
 }
 .navbar .navbar-list .btn-color-red:hover {
-  background-color: #CC0000;
+  background-color: #cc0000;
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .nav_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar-list {
+    margin: 0 auto;
+  }
+  .navbar-search {
+    padding: 1em 0;
+    background-color: transparent;
+  }
+}
 .card {
   background-color: white;
   border-radius: 8px;
@@ -383,6 +406,7 @@ header {
 }
 
 .greetings {
+  padding: 1em 0;
   text-align: center;
   color: #dadbdc;
 }
