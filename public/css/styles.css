@@ -530,4 +530,16 @@ header {
     width: 320px;
     height: auto;
   }
+}
+.view_title {
+  margin: 1em 1em;
+}
+
+.fav_container {
+  display: flex;
+  margin: 0 1em;
+  gap: 1em;
+}
+.fav_container a {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

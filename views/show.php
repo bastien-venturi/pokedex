@@ -37,9 +37,15 @@ echo '</pre>'; */
                 </div>
                 <h2>Evolutions</h2>
                 <ul class="pokemon_evo">
-                    <li class="evo_1"><img src="/public/img/pokemon/<?= $pokemonDetails['evol_1_name']; ?>.png"></li>
-                    <li class="evo_2"><img src="/public/img/pokemon/<?= $pokemonDetails['evol_2_name']; ?>.png"></li>
-                    <li class="evo_3"><img src="/public/img/pokemon/<?= $pokemonDetails['evol_3_name']; ?>.png"></li>
+                    <?php if (isset($pokemonDetails['evol_1_name'])) : ?>
+                        <li class="evo_1"><img src="/public/img/pokemon/<?= $pokemonDetails['evol_1_name']; ?>.png"></li>
+                    <?php endif; ?>
+                    <?php if (isset($pokemonDetails['evol_2_name'])) : ?>
+                        <li class="evo_2"><img src="/public/img/pokemon/<?= $pokemonDetails['evol_2_name']; ?>.png"></li>
+                    <?php endif; ?>
+                    <?php if (isset($pokemonDetails['evol_3_name'])) : ?>
+                        <li class="evo_3"><img src="/public/img/pokemon/<?= $pokemonDetails['evol_3_name'] ?>.png"></li>
+                    <?php endif; ?>
                 </ul>
             </div>
             <div class="pokemon_row">
