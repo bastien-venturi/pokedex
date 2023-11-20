@@ -407,6 +407,23 @@ header {
   background-color: #d685ad;
 }
 
+.register_form {
+  margin: 0 1.5em;
+  display: flex;
+  gap: 0.5em;
+}
+
+.login_link {
+  margin: 0 1.5em;
+  font-size: 0.9em;
+  margin-top: 0.3em;
+}
+
+@media screen and (max-width: 768px) {
+  .register_form {
+    flex-direction: column;
+  }
+}
 .index_container {
   display: flex;
   justify-content: center;

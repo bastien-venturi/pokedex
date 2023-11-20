@@ -1,13 +1,6 @@
 <?php
 $title = "Home";
 require_once __DIR__ . '/partials/header.php';
-
-// $title = $_GET['name'];
-// echo $name
-
-
-
-
 ?>
 
 <main>
