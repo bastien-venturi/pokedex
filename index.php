@@ -69,6 +69,8 @@ switch ($url['path']) {
             require 'controllers/FavController.php';
         }
         break;
+
+    // Default case: Handle all other paths
         
         case '/index.php/login':
             // Check if the HTTP method is GET
