@@ -5,13 +5,12 @@ require './queries/connectDb.php';
 
 function index()
 {
-    if($_SESSION['user']){
+    if(isset($_SESSION['user'])){
         $name = $_SESSION['user']['name'];
     }
 
 
     $pdo = connectDb();
-
     try {
         $query = $pdo->query('SELECT 
         p.*, 
@@ -27,5 +26,5 @@ function index()
 
     require_once __DIR__ . '/../views/index.php';
 
-    return $user;
+    // return $user;
 }
