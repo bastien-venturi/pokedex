@@ -4,17 +4,21 @@ require_once __DIR__ . '/partials/header.php';
 ?>
 
 <main>
-    <h1>Pokedex - Homepage</h1>
-    <p>Hello <strong><?php echo $user['name'] ?></p></strong>
-    <a href="index.php/pokemon?name=Pikachu">Pikachu</a>
-    <a href="index.php/login">Login</a>
-    <a href="index.php/User">User</a>
+    <h1 class="greetings">Hello <strong><?php echo $name ?></h1></strong>
 </main>
 
-<div class="container">
+
+<div class="index_container">
     <?php
     foreach ($data as $row) {
+        echo '<a href="index.php/pokemon?name=' . $row['name'] . '">';
         echo '<div class="card">';
+        if (isset($_SESSION['user'])) {
+            echo '<form action="../controllers/addFav.php" method="post">';
+            echo '<input type="hidden" name="pokeId" value="' . $row['id'] . '">';
+            echo '<input type="submit" value="+">';
+            echo '</form>';
+        }
         echo '<figure><img src="' . $row['url_img'] . '" alt="pokemon_img">';
         echo '</figure>';
         echo '<span class="type">#0000' . $row['id'] . '</span>';
@@ -24,6 +28,7 @@ require_once __DIR__ . '/partials/header.php';
         echo '<li class="' . $row['secondary_type_name'] . '">' . $row['secondary_type_name'] . '</li>';
         echo '</ul>';
         echo '</div>';
+        echo '</a>';
     }
     ?>
 </div>
