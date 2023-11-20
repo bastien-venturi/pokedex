@@ -35,7 +35,7 @@ switch ($url['path']) {
                 // Set HTTP response code to 404 Not Found
                 http_response_code(404);
             }
-        
+
         }
         break;
 
@@ -46,7 +46,7 @@ switch ($url['path']) {
             require 'controllers/loginController.php';
             index();
 
-        }else {
+        } else {
             // If 'pokemon' parameter is not set, include the 'views/errors/404.php' file
             require 'views/errors/404.php';
             // Set HTTP response code to 404 Not Found
@@ -62,6 +62,15 @@ switch ($url['path']) {
                 index();
             }
         break;
+    case '/index.php/account':
+        // Check if the HTTP method is GET
+        if ($method == 'GET') {
+            // Include the 'controllers/UserController.php' file for the root path
+            require 'controllers/FavController.php';
+        }
+        break;
+
+    // Default case: Handle all other paths
         
         case '/index.php/login':
             // Check if the HTTP method is GET
