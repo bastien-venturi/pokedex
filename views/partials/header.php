@@ -19,7 +19,7 @@
                 <li><a href="#">
                         <h2>Pokemon</h2>
                     </a></li>
-                <li><a href="#">
+                <li><a href="index.php/account">
                         <h2>My account</h2>
                     </a></li>
                 <li><a href="#">

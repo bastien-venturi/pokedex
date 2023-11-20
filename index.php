@@ -8,7 +8,7 @@ session_start();
 
 // Switch statement to handle different routes based on the path from the URL
 switch ($url['path']) {
-        // Case: Root path '/'
+    // Case: Root path '/'
     case '/':
         // Check if the HTTP method is GET
         if ($method == 'GET') {
@@ -18,7 +18,7 @@ switch ($url['path']) {
         }
         break;
 
-        // Case: Handle other paths
+    // Case: Handle other paths
     case '/index.php/pokemon':
         // Check if the HTTP method is GET
         if ($method == 'GET') {
@@ -35,7 +35,7 @@ switch ($url['path']) {
                 // Set HTTP response code to 404 Not Found
                 http_response_code(404);
             }
-        
+
         }
         break;
 
@@ -46,7 +46,7 @@ switch ($url['path']) {
             require 'controllers/loginController.php';
             index();
 
-        }else {
+        } else {
             // If 'pokemon' parameter is not set, include the 'views/errors/404.php' file
             require 'views/errors/404.php';
             // Set HTTP response code to 404 Not Found
@@ -54,16 +54,23 @@ switch ($url['path']) {
         }
         break;
 
-        case '/index.php/User':
-            // Check if the HTTP method is GET
-            if ($method == 'GET') {
-                // Include the 'controllers/UserController.php' file for the root path
-                require 'controllers/UserController.php';
-                index();
-            }
+    case '/index.php/User':
+        // Check if the HTTP method is GET
+        if ($method == 'GET') {
+            // Include the 'controllers/UserController.php' file for the root path
+            require 'controllers/UserController.php';
+            index();
+        }
+        break;
+    case '/index.php/account':
+        // Check if the HTTP method is GET
+        if ($method == 'GET') {
+            // Include the 'controllers/UserController.php' file for the root path
+            require 'controllers/FavController.php';
+        }
         break;
 
-        // Default case: Handle all other paths
+    // Default case: Handle all other paths
     default:
         // Include the 'views/errors/404.php' file for unknown paths
         require 'views/errors/404.php';

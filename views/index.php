@@ -5,7 +5,9 @@ require_once __DIR__ . '/partials/header.php';
 
 <main>
     <h1>Pokedex - Homepage</h1>
-    <p>Hello <strong><?php echo $name ?></p></strong>
+    <?php if(isset($_SESSION['user'])): ?>
+    <p>Hello <strong><?php echo $name ?></strong></p>
+    <?php endif;?>
     <a href="index.php/pokemon?name=Pikachu">Pikachu</a>
     <a href="index.php/login">Login</a>
     <a href="index.php/User">User</a>
@@ -14,7 +16,6 @@ require_once __DIR__ . '/partials/header.php';
 
 <div class="container">
     <?php
-
     foreach ($data as $row) {
         echo '<div class="card">';
         if($_SESSION['user']){
