@@ -138,6 +138,7 @@ table {
   display: flex;
   align-items: center;
   background-color: white;
+  padding-right: 1em;
 }
 .navbar-search h2 {
   font-family: "Exo 2", sans-serif;
@@ -214,7 +215,8 @@ header {
   text-align: center;
 }
 .header-logo img {
-  width: 60%;
+  padding: 1em 0;
+  width: 50%;
 }
 
 .navbar {
@@ -290,6 +292,21 @@ header {
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(215, 215, 215) 0px 0px 0px 2px;
+}
+.card form {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.card input[type=submit] {
+  border: none;
+  font-weight: 600;
+  background: none;
+  color: #dadbdc;
+  cursor: pointer;
+}
+.card input[type=submit]:hover {
+  color: red;
 }
 .card img {
   width: 180px;
@@ -395,7 +412,6 @@ header {
   justify-content: center;
   gap: 0.7em;
   width: 100%;
-  background-color: #f3f4f6;
   flex-wrap: wrap;
   padding: 1em 0;
   font-family: "Poppins";
