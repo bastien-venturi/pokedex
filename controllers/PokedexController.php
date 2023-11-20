@@ -5,7 +5,7 @@ require './queries/connectDb.php';
 
 function index()
 {
-    if($_SESSION['user']){
+    if(isset($_SESSION['user'])){
         $name = $_SESSION['user']['name'];
     }
 
