@@ -4,7 +4,7 @@ require_once __DIR__ . '/partials/header.php';
 ?>
 
 <main>
-    <h2 class="view_title">Mes favoris pouette</h2>
+    <h2 class="view_title">Mes favoris</h2>
     <div class="fav_container">
         <?php foreach ($data as $row) : ?>
             <a href="pokemon?name=<?= $row['poke_name'] ?>">
